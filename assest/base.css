@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #ff3366;
+    --secondary-color: #ff8484; 
+    --white-color: #fff;
+    --black-color: #000;    
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --navbar-height: 50px;
+}
+
+.line-skill {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    height: 10px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.line-skill::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    background-color: #ff3366;
+}
+
+.line-skill::after {
+    content: "80%";
+    position: absolute;
+    font-size: 10px;
+    font-weight: 550;
+    left: 85%;
+    top: -1px;
+}
+
+.line-skill-30.line-skill::before {
+    width: 90%;
+}
+
+.line-skill-30.line-skill::after {
+    content: "90%";
+    left: 90%;
+}
+
+.line-skill-20.line-skill::before {
+    width: 80%;
+}
+
+.line-skill-20.line-skill::after {
+    content: "80%";
+    left: 85%;
+}
+
+.line-skill-10.line-skill::before {
+    width: 80%;
+}
+
+.line-skill-10.line-skill::after {
+    content: "80%";
+    left: 85%;
+}
+
+.no-upcase {
+    text-transform: none!important;
+}
